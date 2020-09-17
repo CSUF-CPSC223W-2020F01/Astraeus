@@ -1,7 +1,7 @@
 # project $wiftM0ney
 
 **Project Ideas**
-- Solar System 
+- Live Solar System Viewer 
 - Discord Bot
 - Web Comic Randomized Viewer
 - iOS14 widget
