@@ -16,6 +16,6 @@ Live Solar System Model
 - special events (eclipses, asteroids, comets)
 
 **Contributors**
-Alex Tran
-Taylor Noh
-Aaron Lieberman
+- Alex Tran
+- Taylor Noh
+- Aaron Lieberman
