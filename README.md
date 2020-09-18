@@ -13,3 +13,8 @@ Live Solar System Model
 - 2d model of the solar system
 - Click each planet to view more information
 - special events (eclipses, asteroids, comets)
+
+**Contributors**
+Alex Tran
+Taylor Noh
+Aaron Lieberman
