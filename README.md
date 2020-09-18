@@ -7,6 +7,7 @@
 - ~~iOS14 widget~~
 
 **Decided Idea**
+
 Live Solar System Model
 
 **Planned Features**
