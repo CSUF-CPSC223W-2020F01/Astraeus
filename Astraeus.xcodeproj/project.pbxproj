@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ECCF302251D5B8F00462676 /* AstraeusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF301251D5B8F00462676 /* AstraeusApp.swift */; };
+		7ECCF304251D5B8F00462676 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF303251D5B8F00462676 /* ContentView.swift */; };
+		7ECCF306251D5B9300462676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECCF305251D5B9300462676 /* Assets.xcassets */; };
+		7ECCF309251D5B9300462676 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECCF308251D5B9300462676 /* Preview Assets.xcassets */; };
+		7ECCF314251D5B9300462676 /* AstraeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF313251D5B9300462676 /* AstraeusTests.swift */; };
+		7ECCF31F251D5B9400462676 /* AstraeusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF31E251D5B9400462676 /* AstraeusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ECCF310251D5B9300462676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ECCF2F6251D5B8F00462676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ECCF2FD251D5B8F00462676;
+			remoteInfo = Astraeus;
+		};
+		7ECCF31B251D5B9400462676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ECCF2F6251D5B8F00462676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ECCF2FD251D5B8F00462676;
+			remoteInfo = Astraeus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7ECCF2FE251D5B8F00462676 /* Astraeus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astraeus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECCF301251D5B8F00462676 /* AstraeusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraeusApp.swift; sourceTree = "<group>"; };
+		7ECCF303251D5B8F00462676 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7ECCF305251D5B9300462676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ECCF308251D5B9300462676 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7ECCF30A251D5B9300462676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECCF30F251D5B9300462676 /* AstraeusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstraeusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECCF313251D5B9300462676 /* AstraeusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraeusTests.swift; sourceTree = "<group>"; };
+		7ECCF315251D5B9300462676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECCF31A251D5B9400462676 /* AstraeusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstraeusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECCF31E251D5B9400462676 /* AstraeusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraeusUITests.swift; sourceTree = "<group>"; };
+		7ECCF320251D5B9400462676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ECCF2FB251D5B8F00462676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ECCF30C251D5B9300462676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ECCF317251D5B9400462676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ECCF2F5251D5B8F00462676 = {
+			isa = PBXGroup;
+			children = (
+				7ECCF300251D5B8F00462676 /* Astraeus */,
+				7ECCF312251D5B9300462676 /* AstraeusTests */,
+				7ECCF31D251D5B9400462676 /* AstraeusUITests */,
+				7ECCF2FF251D5B8F00462676 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7ECCF2FF251D5B8F00462676 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ECCF2FE251D5B8F00462676 /* Astraeus.app */,
+				7ECCF30F251D5B9300462676 /* AstraeusTests.xctest */,
+				7ECCF31A251D5B9400462676 /* AstraeusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ECCF300251D5B8F00462676 /* Astraeus */ = {
+			isa = PBXGroup;
+			children = (
+				7ECCF301251D5B8F00462676 /* AstraeusApp.swift */,
+				7ECCF303251D5B8F00462676 /* ContentView.swift */,
+				7ECCF305251D5B9300462676 /* Assets.xcassets */,
+				7ECCF30A251D5B9300462676 /* Info.plist */,
+				7ECCF307251D5B9300462676 /* Preview Content */,
+			);
+			path = Astraeus;
+			sourceTree = "<group>";
+		};
+		7ECCF307251D5B9300462676 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7ECCF308251D5B9300462676 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7ECCF312251D5B9300462676 /* AstraeusTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ECCF313251D5B9300462676 /* AstraeusTests.swift */,
+				7ECCF315251D5B9300462676 /* Info.plist */,
+			);
+			path = AstraeusTests;
+			sourceTree = "<group>";
+		};
+		7ECCF31D251D5B9400462676 /* AstraeusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7ECCF31E251D5B9400462676 /* AstraeusUITests.swift */,
+				7ECCF320251D5B9400462676 /* Info.plist */,
+			);
+			path = AstraeusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ECCF2FD251D5B8F00462676 /* Astraeus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ECCF323251D5B9400462676 /* Build configuration list for PBXNativeTarget "Astraeus" */;
+			buildPhases = (
+				7ECCF2FA251D5B8F00462676 /* Sources */,
+				7ECCF2FB251D5B8F00462676 /* Frameworks */,
+				7ECCF2FC251D5B8F00462676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Astraeus;
+			productName = Astraeus;
+			productReference = 7ECCF2FE251D5B8F00462676 /* Astraeus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7ECCF30E251D5B9300462676 /* AstraeusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ECCF326251D5B9400462676 /* Build configuration list for PBXNativeTarget "AstraeusTests" */;
+			buildPhases = (
+				7ECCF30B251D5B9300462676 /* Sources */,
+				7ECCF30C251D5B9300462676 /* Frameworks */,
+				7ECCF30D251D5B9300462676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ECCF311251D5B9300462676 /* PBXTargetDependency */,
+			);
+			name = AstraeusTests;
+			productName = AstraeusTests;
+			productReference = 7ECCF30F251D5B9300462676 /* AstraeusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7ECCF319251D5B9400462676 /* AstraeusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ECCF329251D5B9400462676 /* Build configuration list for PBXNativeTarget "AstraeusUITests" */;
+			buildPhases = (
+				7ECCF316251D5B9400462676 /* Sources */,
+				7ECCF317251D5B9400462676 /* Frameworks */,
+				7ECCF318251D5B9400462676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ECCF31C251D5B9400462676 /* PBXTargetDependency */,
+			);
+			name = AstraeusUITests;
+			productName = AstraeusUITests;
+			productReference = 7ECCF31A251D5B9400462676 /* AstraeusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ECCF2F6251D5B8F00462676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7ECCF2FD251D5B8F00462676 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					7ECCF30E251D5B9300462676 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 7ECCF2FD251D5B8F00462676;
+					};
+					7ECCF319251D5B9400462676 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 7ECCF2FD251D5B8F00462676;
+					};
+				};
+			};
+			buildConfigurationList = 7ECCF2F9251D5B8F00462676 /* Build configuration list for PBXProject "Astraeus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7ECCF2F5251D5B8F00462676;
+			productRefGroup = 7ECCF2FF251D5B8F00462676 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ECCF2FD251D5B8F00462676 /* Astraeus */,
+				7ECCF30E251D5B9300462676 /* AstraeusTests */,
+				7ECCF319251D5B9400462676 /* AstraeusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ECCF2FC251D5B8F00462676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECCF309251D5B9300462676 /* Preview Assets.xcassets in Resources */,
+				7ECCF306251D5B9300462676 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ECCF30D251D5B9300462676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ECCF318251D5B9400462676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ECCF2FA251D5B8F00462676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECCF304251D5B8F00462676 /* ContentView.swift in Sources */,
+				7ECCF302251D5B8F00462676 /* AstraeusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ECCF30B251D5B9300462676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECCF314251D5B9300462676 /* AstraeusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ECCF316251D5B9400462676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECCF31F251D5B9400462676 /* AstraeusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ECCF311251D5B9300462676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ECCF2FD251D5B8F00462676 /* Astraeus */;
+			targetProxy = 7ECCF310251D5B9300462676 /* PBXContainerItemProxy */;
+		};
+		7ECCF31C251D5B9400462676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ECCF2FD251D5B8F00462676 /* Astraeus */;
+			targetProxy = 7ECCF31B251D5B9400462676 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7ECCF321251D5B9400462676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7ECCF322251D5B9400462676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ECCF324251D5B9400462676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Astraeus/Preview Content\"";
+				DEVELOPMENT_TEAM = C67C9XRRF6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Astraeus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AARN.Astraeus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7ECCF325251D5B9400462676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Astraeus/Preview Content\"";
+				DEVELOPMENT_TEAM = C67C9XRRF6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Astraeus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AARN.Astraeus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7ECCF327251D5B9400462676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C67C9XRRF6;
+				INFOPLIST_FILE = AstraeusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AARN.AstraeusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astraeus.app/Astraeus";
+			};
+			name = Debug;
+		};
+		7ECCF328251D5B9400462676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C67C9XRRF6;
+				INFOPLIST_FILE = AstraeusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AARN.AstraeusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astraeus.app/Astraeus";
+			};
+			name = Release;
+		};
+		7ECCF32A251D5B9400462676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C67C9XRRF6;
+				INFOPLIST_FILE = AstraeusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AARN.AstraeusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astraeus;
+			};
+			name = Debug;
+		};
+		7ECCF32B251D5B9400462676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C67C9XRRF6;
+				INFOPLIST_FILE = AstraeusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AARN.AstraeusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astraeus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ECCF2F9251D5B8F00462676 /* Build configuration list for PBXProject "Astraeus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ECCF321251D5B9400462676 /* Debug */,
+				7ECCF322251D5B9400462676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ECCF323251D5B9400462676 /* Build configuration list for PBXNativeTarget "Astraeus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ECCF324251D5B9400462676 /* Debug */,
+				7ECCF325251D5B9400462676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ECCF326251D5B9400462676 /* Build configuration list for PBXNativeTarget "AstraeusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ECCF327251D5B9400462676 /* Debug */,
+				7ECCF328251D5B9400462676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ECCF329251D5B9400462676 /* Build configuration list for PBXNativeTarget "AstraeusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ECCF32A251D5B9400462676 /* Debug */,
+				7ECCF32B251D5B9400462676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7ECCF2F6251D5B8F00462676 /* Project object */;
+}
