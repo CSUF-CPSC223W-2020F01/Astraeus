@@ -1,19 +1,10 @@
-# project $wiftM0ney
-
-**Project Ideas**
-- Live Solar System Model 
-- ~~Discord Bot~~
-- ~~Web Comic Randomized Viewer~~
-- ~~iOS14 widget~~
-
-**Decided Idea**
-
-Live Solar System Model
+# Astraeus
+iOS app that provides realtime information on our solar system.
 
 **Planned Features**
-- 2d model of the solar system
-- Click each planet to view more information
-- special events (eclipses, asteroids, comets)
+- 2D map of our solar system with live tracking of the planets
+- Read about each planet right from the map
+- Learn about upcoming events (eclipses, asteroids & comets, rocket launches, etc.)
 
 **Contributors**
 - Alex Tran
