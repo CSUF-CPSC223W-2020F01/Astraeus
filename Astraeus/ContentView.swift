@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    @State var selection = 2
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             SpaceList()
                 .tabItem {
-                    Image(systemName: "line.horizontal.3")
-                    Text("List")
+                    Image(systemName: "list.bullet")
+                    Text("Planet List")
             }.tag(1)
             
             SpaceMap()
                 .tabItem {
                     Image(systemName: "map")
                     Text("Map")
-            }.tag(2)
+                }.tag(2)
             
             SpaceCalendar()
                 .tabItem {

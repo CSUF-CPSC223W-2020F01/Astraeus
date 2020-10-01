@@ -9,11 +9,23 @@ import SwiftUI
 
 struct SpaceList: View {
     var body: some View {
-        VStack {
-            Text("Earth")
-            Text("Mars")
-            Text("Venus")
-            Text("Saturn")
+        List {
+            ListItem(text: "The Sun", image: Image(systemName: "sun.max.fill"))
+            ListItem(text: "Earth", image: Image(systemName: "globe"))
+            ListItem(text: "Mars", image: Image(systemName: "m.circle.fill"))
+            ListItem(text: "Mercury", image: Image(systemName: "m.circle.fill"))
+        }
+    }
+}
+
+struct ListItem: View {
+    var text: String
+    var image: Image
+    var body: some View {
+        HStack {
+            image.padding()
+            Spacer()
+            Text(text).padding()
         }
     }
 }
