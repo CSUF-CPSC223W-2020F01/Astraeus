@@ -12,9 +12,9 @@ struct SpaceMap: View {
         ZStack {
             //Ring(radius: 200)
             Circle().foregroundColor(.yellow).frame(width: 50, height: 50)
-            Planet(radius: 20, orbitRadius: 57, color: .gray, rotationSpeed: 0.24)
-            Planet(radius: 20, orbitRadius: 108, color: .red, rotationSpeed: 0.61)
-            Planet(radius: 20, orbitRadius: 149, color: .green, rotationSpeed: 1)
+            PlanetView(radius: 20, orbitRadius: 57, color: .gray, rotationSpeed: 0.24)
+            PlanetView(radius: 20, orbitRadius: 108, color: .red, rotationSpeed: 0.61)
+            PlanetView(radius: 20, orbitRadius: 149, color: .green, rotationSpeed: 1)
         }
     }
 }
@@ -26,7 +26,7 @@ struct Ring: View {
     }
 }
 
-struct Planet: View {
+struct PlanetView: View {
     var radius: CGFloat
     var orbitRadius: CGFloat
     var color: Color
