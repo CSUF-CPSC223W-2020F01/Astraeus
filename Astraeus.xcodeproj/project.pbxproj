@@ -17,6 +17,7 @@
 		7ECCF309251D5B9300462676 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECCF308251D5B9300462676 /* Preview Assets.xcassets */; };
 		7ECCF314251D5B9300462676 /* AstraeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF313251D5B9300462676 /* AstraeusTests.swift */; };
 		7ECCF31F251D5B9400462676 /* AstraeusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF31E251D5B9400462676 /* AstraeusUITests.swift */; };
+		FA09605B252FB6C600C7AC5A /* Planets.json in Resources */ = {isa = PBXBuildFile; fileRef = FA09605A252FB6C600C7AC5A /* Planets.json */; };
 		FAD848A92527BB21005B666D /* PlanetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD848A82527BB21005B666D /* PlanetInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		7ECCF31A251D5B9400462676 /* AstraeusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstraeusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECCF31E251D5B9400462676 /* AstraeusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraeusUITests.swift; sourceTree = "<group>"; };
 		7ECCF320251D5B9400462676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA09605A252FB6C600C7AC5A /* Planets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Planets.json; sourceTree = "<group>"; };
 		FAD848A82527BB21005B666D /* PlanetInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD848A82527BB21005B666D /* PlanetInfo.swift */,
+				FA09605A252FB6C600C7AC5A /* Planets.json */,
 				7ECCF301251D5B8F00462676 /* AstraeusApp.swift */,
 				7ECCF303251D5B8F00462676 /* ContentView.swift */,
 				7E2D6637252524DB001672B2 /* SpaceList.swift */,
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ECCF309251D5B9300462676 /* Preview Assets.xcassets in Resources */,
+				FA09605B252FB6C600C7AC5A /* Planets.json in Resources */,
 				7ECCF306251D5B9300462676 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

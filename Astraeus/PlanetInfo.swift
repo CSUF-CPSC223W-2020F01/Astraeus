@@ -10,9 +10,9 @@
 struct PlanetInfo
 {
     let orbitDistance: Int /// km
-    let radius: Int /// km
+    let radius: Double /// km
     let volume: Int /// km^3
-    let mass: Int /// kg
+    let mass: Int64 /// kg
     let density: Float /// g/cm^3
     let gravity: Float /// m/s^2
     
