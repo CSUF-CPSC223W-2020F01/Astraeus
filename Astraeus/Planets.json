@@ -13,8 +13,9 @@
         "orbitPeriod": "0.2408467",
         "avgOrbitVelocity": "170,503",
         "orbitInclination": "7.0",
-        "surfaceTempRange": [ "-173", "427" ]
-    }
+        "surfaceTempRange": [ "-173", "427" ],
+        "description": "Mercury-the smallest planet in our solar system and closest to the Sun-is only slighly larger than Earth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Earth days."
+    },
     {
         "name": "Venus",
         
@@ -29,8 +30,9 @@
         "orbitPeriod": "0.61519726",
         "avgOrbitVelocity": "126,074",
         "orbitInclination": "3.39",
-        "surfaceTempRange": [ "462", "462" ]
-    }
+        "surfaceTempRange": [ "462", "462" ],
+        "description": "Venus spins slowly in the opposite direction from most planets. A thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system."
+    },
     {
         "name": "Earth",
         
@@ -45,8 +47,9 @@
         "orbitPeriod": "1.0000174",
         "avgOrbitVelocity": "107,218",
         "orbitInclination": "0.00005",
-        "surfaceTempRange": [ "-88", "58" ]
-    }
+        "surfaceTempRange": [ "-88", "58" ],
+        "description": "Earth-our home planet-is the only place we know of so far that's inhabited by living things. It's also the only planet in our solar system with liquid water on the surface."
+    },
     {
         "name": "Mars",
         
@@ -61,8 +64,9 @@
         "orbitPeriod": "1.8808476",
         "avgOrbitVelocity": "86,677",
         "orbitInclination": "1.85",
-        "surfaceTempRange": [ "-153", "20" ]
-    }
+        "surfaceTempRange": [ "-153", "20" ],
+        "description": "Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was-billions of years-wetter and warmer, with a thicker atmosphere."
+    },
     {
         "name": "Jupiter",
         
@@ -78,7 +82,8 @@
         "avgOrbitVelocity": "47,002",
         "orbitInclination": "1.304",
         "surfaceTempRange": null
-    }
+        "description": "Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red spot is a centuries-old storm bigger than Earth."
+    },
     {
         "name": "Saturn",
         
@@ -93,8 +98,9 @@
         "orbitPeriod": "29.447498",
         "avgOrbitVelocity": "34,701",
         "orbitInclination": "2.49",
-        "surfaceTempRange": null
-    }
+        "surfaceTempRange": null,
+        "description": "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but non are as spectacular as Saturn's."
+    },
     {
         "name": "Uranus",
         
@@ -109,8 +115,9 @@
         "orbitPeriod": "84.016846",
         "avgOrbitVelocity": "24,477",
         "orbitInclination": "0.77",
-        "surfaceTempRange": null
-    }
+        "surfaceTempRange": null,
+        "description": "Uranus-seventh planet from the Sun-rotates at nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side."
+    },
     {
         "name": "Neptune",
         
@@ -125,6 +132,7 @@
         "orbitPeriod": "164.79132",
         "avgOrbitVelocity": "19,566",
         "orbitInclination": "1.77",
-        "surfaceTempRange": null
+        "surfaceTempRange": null,
+        "description": "Neptune-the eighth and most distant major planet orbiting our Sun-is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations."
     }
 ]
