@@ -18,6 +18,12 @@ struct SpaceList: View {
             }.navigationBarTitle(Text("Planets"))
         }
     }
+    init()
+    {
+        if let arr = create() {
+            print(arr)
+        }
+    }
 }
 
 struct ListItem: View {
