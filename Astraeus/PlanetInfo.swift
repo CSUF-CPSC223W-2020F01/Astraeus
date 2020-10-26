@@ -22,4 +22,6 @@ struct PlanetInfo
     let orbitInclination: Float /// degrees
     
     let surfaceTempRange: (Int, Int) /// celcius; (from, to) inclusive
+    
+    let description: String
 }
