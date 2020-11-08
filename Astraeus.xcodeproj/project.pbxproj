@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E298D40255884D300F1B59D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E298D3F255884D300F1B59D /* Util.swift */; };
 		7E2D6638252524DB001672B2 /* SpaceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6637252524DB001672B2 /* SpaceList.swift */; };
 		7E2D6640252524EA001672B2 /* SpaceMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D663F252524EA001672B2 /* SpaceMap.swift */; };
 		7E2D664525252528001672B2 /* SpaceCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D664425252528001672B2 /* SpaceCalendar.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E298D3F255884D300F1B59D /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		7E2D6637252524DB001672B2 /* SpaceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceList.swift; sourceTree = "<group>"; };
 		7E2D663F252524EA001672B2 /* SpaceMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMap.swift; sourceTree = "<group>"; };
 		7E2D664425252528001672B2 /* SpaceCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCalendar.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				7ECCF30A251D5B9300462676 /* Info.plist */,
 				7ECCF307251D5B9300462676 /* Preview Content */,
 				7E2D66492526B3AE001672B2 /* SpaceDetail.swift */,
+				7E298D3F255884D300F1B59D /* Util.swift */,
 			);
 			path = Astraeus;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				7ECCF304251D5B8F00462676 /* ContentView.swift in Sources */,
 				7E2D664A2526B3AF001672B2 /* SpaceDetail.swift in Sources */,
 				7ECCF302251D5B8F00462676 /* AstraeusApp.swift in Sources */,
+				7E298D40255884D300F1B59D /* Util.swift in Sources */,
 				7E2D6638252524DB001672B2 /* SpaceList.swift in Sources */,
 				FAD848A92527BB21005B666D /* PlanetInfo.swift in Sources */,
 				7E2D6640252524EA001672B2 /* SpaceMap.swift in Sources */,
