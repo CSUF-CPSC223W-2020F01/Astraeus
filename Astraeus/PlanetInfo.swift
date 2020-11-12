@@ -12,8 +12,10 @@ import CoreLocation
 let planetData = createPlanetData()
 
 // Data source: https://solarsystem.nasa.gov/planet-compare/
-struct PlanetInfo: Decodable
+struct PlanetInfo: Decodable, Identifiable
 {
+    var id = UUID()
+    
     let name: String
     let orbitDistance: String /// km
     let radius: String /// km
@@ -29,6 +31,22 @@ struct PlanetInfo: Decodable
     
     let surfaceTempRange: [String] /// celcius; (from, to) inclusive
     let description: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case name
+        case orbitDistance
+        case radius
+        case volume
+        case mass
+        case density
+        case gravity
+        case rotationPeriod
+        case orbitPeriod
+        case avgOrbitVelocity
+        case orbitInclination
+        case surfaceTempRange
+        case description
+    }
 }
 
 extension PlanetInfo {

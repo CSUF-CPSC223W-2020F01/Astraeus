@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct SpaceDetail: View {
+    let planetInfo: PlanetInfo?
+    
+    init(_ newPlanetInfo: PlanetInfo?) {
+        planetInfo = newPlanetInfo
+    }
+    
     var body: some View {
         Text("Details")
     }
@@ -15,6 +21,6 @@ struct SpaceDetail: View {
 
 struct SpaceDetail_Previews: PreviewProvider {
     static var previews: some View {
-        SpaceDetail()
+        SpaceDetail(nil)
     }
 }

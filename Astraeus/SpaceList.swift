@@ -17,11 +17,20 @@ struct SpaceList: View {
 //                ListItem(text: "Mercury", image: Image(systemName: "m.circle.fill"))
 //            }.navigationBarTitle(Text("Planets"))
             
-            List {
-                PlanetRow(planet: planetData![0])
-                PlanetRow(planet: planetData![1])
-                PlanetRow(planet: planetData![2])
-                PlanetRow(planet: planetData![3])
+//            List {
+//                NavigationLink(destination: SpaceDetail(nil)) {
+//                    PlanetRow(planet: planetData![0])
+//                }
+//                PlanetRow(planet: planetData![1])
+//                PlanetRow(planet: planetData![2])
+//                PlanetRow(planet: planetData![3])
+//            }
+//            .navigationBarTitle(Text("Planets"))
+            
+            List(planetData!) { curPlanet in
+                NavigationLink(destination: SpaceDetail(curPlanet)) {
+                    PlanetRow(planet: curPlanet)
+                }
             }
             .navigationBarTitle(Text("Planets"))
         }
@@ -38,7 +47,7 @@ struct ListItem: View {
     var text: String
     var image: Image
     var body: some View {
-        NavigationLink(destination: SpaceDetail()) {
+        NavigationLink(destination: SpaceDetail(nil)) {
             HStack {
                 image.padding()
                 Text(text).padding()
