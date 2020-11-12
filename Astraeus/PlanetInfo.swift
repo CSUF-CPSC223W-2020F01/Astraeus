@@ -6,10 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
+import CoreLocation
+
+let planetData = createPlanetData()
 
 // Data source: https://solarsystem.nasa.gov/planet-compare/
 struct PlanetInfo: Decodable
 {
+    let name: String
     let orbitDistance: String /// km
     let radius: String /// km
     let volume: String /// km^3
@@ -24,6 +29,12 @@ struct PlanetInfo: Decodable
     
     let surfaceTempRange: [String] /// celcius; (from, to) inclusive
     let description: String
+}
+
+extension PlanetInfo {
+    var image: UIImage {
+        return UIImage(named: name)!
+    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
@@ -48,7 +59,13 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-func create() -> [PlanetInfo]? {
+fileprivate func createPlanetData() -> [PlanetInfo]? {
     guard let arr: [PlanetInfo] = load("Planets.json") else { return nil }
     return arr
+}
+
+struct PlanetInfo_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
 }
