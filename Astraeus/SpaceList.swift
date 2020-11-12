@@ -43,7 +43,7 @@ struct SpaceList: View {
     }
 }
 
-struct ListItem: View {
+/*struct ListItem: View {
     var text: String
     var image: Image
     var body: some View {
@@ -55,7 +55,7 @@ struct ListItem: View {
             }
         }
     }
-}
+}*/
 
 struct SpaceList_Previews: PreviewProvider {
     static var previews: some View {

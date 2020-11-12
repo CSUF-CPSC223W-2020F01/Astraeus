@@ -29,7 +29,7 @@ struct PlanetInfo: Decodable, Identifiable
     let avgOrbitVelocity: String /// km/h
     let orbitInclination: String /// degrees
     
-    let surfaceTempRange: [String] /// celcius; (from, to) inclusive
+    let surfaceTempRange: String /// celcius; (from, to) inclusive
     let description: String
     
     private enum CodingKeys: String, CodingKey {
