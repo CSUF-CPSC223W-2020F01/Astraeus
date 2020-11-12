@@ -130,5 +130,20 @@
   "orbitInclination": "1.77",
   "surfaceTempRange": [],
   "description": "Neptune-the eighth and most distant major planet orbiting our Sun-is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations."
+},
+{
+  "name": "Schleptune",
+  "orbitDistance": "4,498,396,441",
+  "radius": "24,622",
+  "volume": "62,525,703,987,421",
+  "mass": "102,410,000,000,000,000,000,000,000",
+  "density": "1.638",
+  "gravity": "11.15",
+  "rotationPeriod": "0.671",
+  "orbitPeriod": "164.79132",
+  "avgOrbitVelocity": "19,566",
+  "orbitInclination": "1.77",
+  "surfaceTempRange": [],
+  "description": "Neptune-the eighth and most distant major planet orbiting our Sun-is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations."
 }
 ]
