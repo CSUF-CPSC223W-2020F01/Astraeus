@@ -19,6 +19,7 @@
 		7ECCF314251D5B9300462676 /* AstraeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF313251D5B9300462676 /* AstraeusTests.swift */; };
 		7ECCF31F251D5B9400462676 /* AstraeusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF31E251D5B9400462676 /* AstraeusUITests.swift */; };
 		FA09605B252FB6C600C7AC5A /* Planets.json in Resources */ = {isa = PBXBuildFile; fileRef = FA09605A252FB6C600C7AC5A /* Planets.json */; };
+		FA3156132558835E00281EB6 /* PlanetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3156122558835E00281EB6 /* PlanetRow.swift */; };
 		FAD848A92527BB21005B666D /* PlanetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD848A82527BB21005B666D /* PlanetInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		7ECCF31E251D5B9400462676 /* AstraeusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraeusUITests.swift; sourceTree = "<group>"; };
 		7ECCF320251D5B9400462676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA09605A252FB6C600C7AC5A /* Planets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Planets.json; sourceTree = "<group>"; };
+		FA3156122558835E00281EB6 /* PlanetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRow.swift; sourceTree = "<group>"; };
 		FAD848A82527BB21005B666D /* PlanetInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				7ECCF307251D5B9300462676 /* Preview Content */,
 				7E2D66492526B3AE001672B2 /* SpaceDetail.swift */,
 				7E298D3F255884D300F1B59D /* Util.swift */,
+				FA3156122558835E00281EB6 /* PlanetRow.swift */,
 			);
 			path = Astraeus;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				7E2D6638252524DB001672B2 /* SpaceList.swift in Sources */,
 				FAD848A92527BB21005B666D /* PlanetInfo.swift in Sources */,
 				7E2D6640252524EA001672B2 /* SpaceMap.swift in Sources */,
+				FA3156132558835E00281EB6 /* PlanetRow.swift in Sources */,
 				7E2D664525252528001672B2 /* SpaceCalendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
