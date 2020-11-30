@@ -122,8 +122,8 @@
 },
 {
   "name": "Schleptune",
-  "orbitDistance": "4,498,396,441",
-  "radius": "24,622",
+  "orbitDistance": "20,658,397,111,069",
+  "radius": "106",
   "volume": "62,525,703,987,421",
   "mass": "102,410,000,000,000,000,000,000,000",
   "density": "1.638",
@@ -133,6 +133,6 @@
   "avgOrbitVelocity": "19,566",
   "orbitInclination": "1.77",
   "surfaceTempRange": "",
-  "description": "Neptune-the eighth and most distant major planet orbiting our Sun-is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations."
+  "description": "A newly discovered planet by Aaron Lieberman, Schleptune sits extremely far away from the center of our solar system. Despite being out of theoretical orbital range, it still manages to maintain orbit with our Sun."
 }
 ]
