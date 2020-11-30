@@ -7,10 +7,22 @@
 
 import Foundation
 
+extension URL {
+    func withQueries(_ queries: [String: String]) -> URL? {
+        var components = URLComponents(url: self,
+        resolvingAgainstBaseURL: true)
+        components?.queryItems = queries.map {
+          URLQueryItem(name: $0.0, value: $0.1)
+        }
+        return components?.url
+    }
+}
+
+
 class Util {
-    static func call_api(_ url_name: String) {
+    static func call_api(url url_name: String, callback: @escaping () -> Void) {
         guard let url = URL(string: url_name) else {
-            print("Error: cannot create url")
+            print("Error: cannot base create url")
             return
         }
         
