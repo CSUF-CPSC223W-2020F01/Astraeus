@@ -23,10 +23,10 @@ struct ContentView: View {
                     Text("Map")
                 }.tag(2)
             
-            SpaceCalendar()
+            EventList()
                 .tabItem {
                     Image(systemName: "calendar")
-                    Text("Calendar")
+                    Text("Events")
            }.tag(3)
             
         }

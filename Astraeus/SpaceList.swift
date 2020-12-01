@@ -10,7 +10,6 @@ import SwiftUI
 struct SpaceList: View {
     var body: some View {
         NavigationView {
-            sortPlanetData()
 //            List {
 //                ListItem(text: "The Sun", image: Image(systemName: "sun.max.fill"))
 //                ListItem(text: "Earth", image: Image(systemName: "globe"))
@@ -29,7 +28,7 @@ struct SpaceList: View {
 //            .navigationBarTitle(Text("Planets"))
             
             List(planetData!) { curPlanet in
-                NavigationLink(destination: SpaceDetail(curPlanet)) {
+                NavigationLink(destination: PlanetView(curPlanet)) {
                     PlanetRow(planet: curPlanet)
                 }
             }
