@@ -10,6 +10,7 @@ import SwiftUI
 struct SpaceList: View {
     var body: some View {
         NavigationView {
+            sortPlanetData()
 //            List {
 //                ListItem(text: "The Sun", image: Image(systemName: "sun.max.fill"))
 //                ListItem(text: "Earth", image: Image(systemName: "globe"))
