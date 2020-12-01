@@ -8,6 +8,8 @@
 import Foundation
 
 protocol Event {
-    var date : Date {get set}
-    var name : String {get set}
+    var date : Date {get}
+    var name : String {get}
+    var description : String {get}
+    var type : String {get}
 }
