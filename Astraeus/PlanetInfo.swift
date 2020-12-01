@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-let planetData = createPlanetData()
+var planetData = createPlanetData()
 
 // Data source: https://solarsystem.nasa.gov/planet-compare/
 struct PlanetInfo: Decodable, Identifiable
@@ -81,6 +81,21 @@ fileprivate func createPlanetData() -> [PlanetInfo]? {
     guard let arr: [PlanetInfo] = load("Planets.json") else { return nil }
     return arr
 }
+
+// Enumeration for each sorting value
+enum sortValue{
+    case orbitDistance, radius, volume, mass, density, gravity, rotationPeriod, orbitPeriod, avgOrbitVelocity, orbitInclination, surfaceTempRange
+}
+
+// Sorting function
+func sortingFunction (value1: PlanetInfo, value2: PlanetInfo) -> Bool {
+    return value1.orbitDistance < value2.orbitDistance
+}
+
+// Sort and display the array by calling passing in the sorting function
+func sortPlanetData () {
+    planetData?.sort(by: sortingFunction)
+    }
 
 struct PlanetInfo_Previews: PreviewProvider {
     static var previews: some View {

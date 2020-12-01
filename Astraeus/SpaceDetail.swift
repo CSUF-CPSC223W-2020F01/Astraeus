@@ -45,6 +45,7 @@ struct SpaceDetail: View {
             .frame(alignment: .leading)
         }
     }
+    
 }
 
 
