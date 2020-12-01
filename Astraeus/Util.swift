@@ -18,9 +18,19 @@ extension URL {
     }
 }
 
+enum APIError: Error {
+    case cannotCreateUrl
+    case httpErr
+    case noData
+    case json
+    case couldNotGetData
+}
+
 
 class Util {
-    static func call_api(url url_name: String, callback: @escaping () -> Void) {
+    
+    static func call_api(url url_name: String, callback: @escaping () -> Void) throws {
+        
         guard let url = URL(string: url_name) else {
             print("Error: cannot base create url")
             return
@@ -33,12 +43,11 @@ class Util {
             
             guard err == nil else {
                 print(err!)
-                return
+                throw APIError.httpErr
             }
             
             guard let resData = body else {
-                print("Error: no data")
-                return
+                throw APIError.noData
             }
             
             do {
