@@ -17,7 +17,6 @@ struct EventRow: View {
     var body: some View {
         HStack {
             Text("\(event.name)")
-                .padding()
             Spacer()
         }
     }
