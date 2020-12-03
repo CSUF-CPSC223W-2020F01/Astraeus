@@ -7,14 +7,21 @@
 
 import SwiftUI
 
-struct SpaceCalendar: View {
+struct SpaceEvents: View {
     var body: some View {
-        Text("Calendar")
+        NavigationView {
+            List {
+                Section(header: Text("March 29, 2021")) {
+                    Text("Calendar")
+                }
+                
+            }
+        }
     }
 }
 
 struct SpaceCalendar_Previews: PreviewProvider {
     static var previews: some View {
-        SpaceCalendar()
+        SpaceEvents()
     }
 }

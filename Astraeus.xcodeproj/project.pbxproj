@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E2D6638252524DB001672B2 /* SpaceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6637252524DB001672B2 /* SpaceList.swift */; };
+		7E2D6638252524DB001672B2 /* PlanetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D6637252524DB001672B2 /* PlanetList.swift */; };
 		7E2D6640252524EA001672B2 /* SpaceMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D663F252524EA001672B2 /* SpaceMap.swift */; };
-		7E2D664525252528001672B2 /* SpaceCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D664425252528001672B2 /* SpaceCalendar.swift */; };
-		7E2D664A2526B3AF001672B2 /* SpaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D66492526B3AE001672B2 /* SpaceDetail.swift */; };
+		7E2D664525252528001672B2 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D664425252528001672B2 /* EventList.swift */; };
+		7E2D664A2526B3AF001672B2 /* PlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D66492526B3AE001672B2 /* PlanetView.swift */; };
 		7E581B1425760BDE0084435B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E581B1325760BDE0084435B /* Event.swift */; };
 		7ECCF302251D5B8F00462676 /* AstraeusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF301251D5B8F00462676 /* AstraeusApp.swift */; };
 		7ECCF304251D5B8F00462676 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF303251D5B8F00462676 /* ContentView.swift */; };
@@ -20,6 +20,8 @@
 		7ECCF31F251D5B9400462676 /* AstraeusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF31E251D5B9400462676 /* AstraeusUITests.swift */; };
 		FA09605B252FB6C600C7AC5A /* Planets.json in Resources */ = {isa = PBXBuildFile; fileRef = FA09605A252FB6C600C7AC5A /* Planets.json */; };
 		FA3156132558835E00281EB6 /* PlanetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3156122558835E00281EB6 /* PlanetRow.swift */; };
+		FA8B5DBB2576F7CB007B0C09 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B5DBA2576F7CB007B0C09 /* EventView.swift */; };
+		FA8B5DC02576F828007B0C09 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B5DBF2576F828007B0C09 /* EventRow.swift */; };
 		FAD848A92527BB21005B666D /* PlanetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD848A82527BB21005B666D /* PlanetInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7E2D6637252524DB001672B2 /* SpaceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceList.swift; sourceTree = "<group>"; };
+		7E2D6637252524DB001672B2 /* PlanetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetList.swift; sourceTree = "<group>"; };
 		7E2D663F252524EA001672B2 /* SpaceMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMap.swift; sourceTree = "<group>"; };
-		7E2D664425252528001672B2 /* SpaceCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCalendar.swift; sourceTree = "<group>"; };
-		7E2D66492526B3AE001672B2 /* SpaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDetail.swift; sourceTree = "<group>"; };
+		7E2D664425252528001672B2 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		7E2D66492526B3AE001672B2 /* PlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetView.swift; sourceTree = "<group>"; };
 		7E581B1325760BDE0084435B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7ECCF2FE251D5B8F00462676 /* Astraeus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astraeus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECCF301251D5B8F00462676 /* AstraeusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraeusApp.swift; sourceTree = "<group>"; };
@@ -60,6 +62,8 @@
 		7ECCF320251D5B9400462676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA09605A252FB6C600C7AC5A /* Planets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Planets.json; sourceTree = "<group>"; };
 		FA3156122558835E00281EB6 /* PlanetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRow.swift; sourceTree = "<group>"; };
+		FA8B5DBA2576F7CB007B0C09 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		FA8B5DBF2576F828007B0C09 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 		FAD848A82527BB21005B666D /* PlanetInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,19 +115,21 @@
 		7ECCF300251D5B8F00462676 /* Astraeus */ = {
 			isa = PBXGroup;
 			children = (
-				FAD848A82527BB21005B666D /* PlanetInfo.swift */,
 				FA09605A252FB6C600C7AC5A /* Planets.json */,
+				7ECCF30A251D5B9300462676 /* Info.plist */,
 				7ECCF301251D5B8F00462676 /* AstraeusApp.swift */,
 				7ECCF303251D5B8F00462676 /* ContentView.swift */,
-				7E2D6637252524DB001672B2 /* SpaceList.swift */,
-				7E2D663F252524EA001672B2 /* SpaceMap.swift */,
-				7E2D664425252528001672B2 /* SpaceCalendar.swift */,
-				7ECCF305251D5B9300462676 /* Assets.xcassets */,
-				7ECCF30A251D5B9300462676 /* Info.plist */,
-				7ECCF307251D5B9300462676 /* Preview Content */,
-				7E2D66492526B3AE001672B2 /* SpaceDetail.swift */,
-				FA3156122558835E00281EB6 /* PlanetRow.swift */,
 				7E581B1325760BDE0084435B /* Event.swift */,
+				7E2D664425252528001672B2 /* EventList.swift */,
+				FA8B5DBF2576F828007B0C09 /* EventRow.swift */,
+				FA8B5DBA2576F7CB007B0C09 /* EventView.swift */,
+				FAD848A82527BB21005B666D /* PlanetInfo.swift */,
+				7E2D6637252524DB001672B2 /* PlanetList.swift */,
+				FA3156122558835E00281EB6 /* PlanetRow.swift */,
+				7E2D66492526B3AE001672B2 /* PlanetView.swift */,
+				7E2D663F252524EA001672B2 /* SpaceMap.swift */,
+				7ECCF305251D5B9300462676 /* Assets.xcassets */,
+				7ECCF307251D5B9300462676 /* Preview Content */,
 			);
 			path = Astraeus;
 			sourceTree = "<group>";
@@ -286,13 +292,15 @@
 			files = (
 				7ECCF304251D5B8F00462676 /* ContentView.swift in Sources */,
 				7E581B1425760BDE0084435B /* Event.swift in Sources */,
-				7E2D664A2526B3AF001672B2 /* SpaceDetail.swift in Sources */,
+				7E2D664A2526B3AF001672B2 /* PlanetView.swift in Sources */,
 				7ECCF302251D5B8F00462676 /* AstraeusApp.swift in Sources */,
-				7E2D6638252524DB001672B2 /* SpaceList.swift in Sources */,
+				7E2D6638252524DB001672B2 /* PlanetList.swift in Sources */,
 				FAD848A92527BB21005B666D /* PlanetInfo.swift in Sources */,
 				7E2D6640252524EA001672B2 /* SpaceMap.swift in Sources */,
 				FA3156132558835E00281EB6 /* PlanetRow.swift in Sources */,
-				7E2D664525252528001672B2 /* SpaceCalendar.swift in Sources */,
+				7E2D664525252528001672B2 /* EventList.swift in Sources */,
+				FA8B5DBB2576F7CB007B0C09 /* EventView.swift in Sources */,
+				FA8B5DC02576F828007B0C09 /* EventRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

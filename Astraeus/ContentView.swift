@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var selection = 2
     var body: some View {
         TabView(selection: $selection) {
-            SpaceList()
+            PlanetList()
                 .tabItem {
                     Image(systemName: "list.bullet")
                     Text("Planet List")
@@ -23,10 +23,10 @@ struct ContentView: View {
                     Text("Map")
                 }.tag(2)
             
-            SpaceCalendar()
+            EventList()
                 .tabItem {
                     Image(systemName: "calendar")
-                    Text("Calendar")
+                    Text("Events")
            }.tag(3)
             
         }

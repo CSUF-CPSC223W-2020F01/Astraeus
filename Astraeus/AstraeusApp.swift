@@ -11,7 +11,7 @@ import SwiftUI
 struct AstraeusApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().colorScheme(.dark)
+            ContentView()//.colorScheme(.dark)
         }
     }
 }

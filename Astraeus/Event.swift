@@ -13,3 +13,10 @@ protocol Event {
     var description : String {get}
     var type : String {get}
 }
+
+class TestEvent: Event {
+    let date = Date()
+    let name = "Test event"
+    let description = "This is a test event."
+    let type = "Test"
+}
