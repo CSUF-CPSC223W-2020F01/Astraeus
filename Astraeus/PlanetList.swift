@@ -48,7 +48,7 @@ struct PlanetList: View {
     }
 }
 
-struct SpaceList_Previews: PreviewProvider {
+struct PlanetList_Previews: PreviewProvider {
     static var previews: some View {
         PlanetList()
     }
