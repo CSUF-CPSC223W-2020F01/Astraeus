@@ -8,55 +8,45 @@
 import SwiftUI
 
 struct SpaceList: View {
+    @State private var sortSelection = SortValue.orbitDistance
     var body: some View {
         NavigationView {
-            sortPlanetData()
-//            List {
-//                ListItem(text: "The Sun", image: Image(systemName: "sun.max.fill"))
-//                ListItem(text: "Earth", image: Image(systemName: "globe"))
-//                ListItem(text: "Mars", image: Image(systemName: "m.circle.fill"))
-//                ListItem(text: "Mercury", image: Image(systemName: "m.circle.fill"))
-//            }.navigationBarTitle(Text("Planets"))
-            
-//            List {
-//                NavigationLink(destination: SpaceDetail(nil)) {
-//                    PlanetRow(planet: planetData![0])
-//                }
-//                PlanetRow(planet: planetData![1])
-//                PlanetRow(planet: planetData![2])
-//                PlanetRow(planet: planetData![3])
-//            }
-//            .navigationBarTitle(Text("Planets"))
-            
             List(planetData!) { curPlanet in
                 NavigationLink(destination: SpaceDetail(curPlanet)) {
                     PlanetRow(planet: curPlanet)
                 }
             }
             .navigationBarTitle(Text("Planets"))
+            .navigationBarItems(trailing: {
+                Menu {
+                    Button(action: { sortPlanetData(property: sortSelection) }) {
+                        Picker(selection: $sortSelection, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
+                            Text("Orbit Distance").tag(SortValue.orbitDistance)
+                            Text("Radius").tag(SortValue.radius)
+                            Text("Volume").tag(SortValue.volume)
+                            Text("Mass").tag(SortValue.mass)
+                            Text("Density").tag(SortValue.density)
+                            Text("Gravity").tag(SortValue.gravity)
+                            Text("Rotation Period").tag(SortValue.rotationPeriod)
+                            Text("Orbit Period").tag(SortValue.orbitPeriod)
+                            Text("Average Orbit Velocity").tag(SortValue.avgOrbitVelocity)
+                            Text("Surface Temperature Range").tag(SortValue.surfaceTempRange)
+                        } .onChange(of: $sortSelection, perform: sortPlanetData(property: $sortSelection))
+                    }
+                } label: {
+                    Image(systemName: "arrow.up.arrow.down")
+                }
+            }())
         }
     }
-    init()
-    {
+
+    init() {
         if planetData != nil {
-            print(planetData)
+            print(planetData!)
+            sortPlanetData(property: .orbitDistance)
         }
     }
 }
-
-/*struct ListItem: View {
-    var text: String
-    var image: Image
-    var body: some View {
-        NavigationLink(destination: SpaceDetail(nil)) {
-            HStack {
-                image.padding()
-                Text(text).padding()
-                Spacer()
-            }
-        }
-    }
-}*/
 
 struct SpaceList_Previews: PreviewProvider {
     static var previews: some View {

@@ -110,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				FAD848A82527BB21005B666D /* PlanetInfo.swift */,
-				FA09605A252FB6C600C7AC5A /* Planets.json */,
 				7ECCF301251D5B8F00462676 /* AstraeusApp.swift */,
+				FA09605A252FB6C600C7AC5A /* Planets.json */,
 				7ECCF303251D5B8F00462676 /* ContentView.swift */,
 				7E2D6637252524DB001672B2 /* SpaceList.swift */,
 				7E2D663F252524EA001672B2 /* SpaceMap.swift */,
