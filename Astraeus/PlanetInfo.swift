@@ -86,13 +86,8 @@ enum sortValue {
     case orbitDistance, radius, volume, mass, density, gravity, rotationPeriod, orbitPeriod, avgOrbitVelocity, orbitInclination, surfaceTempRange
 }
 
-// Sorting function
-func sortingFunction(value1: PlanetInfo, value2: PlanetInfo) -> Bool {
-    return value1.orbitDistance < value2.orbitDistance
-}
-
 // Sort and display the array by calling passing in the sorting function
-func sortPlanetData(property: sortValue) {
+func sortPlanetData(property: sortValue) -> [PlanetInfo]? {
     var sf: (PlanetInfo, PlanetInfo) -> Bool
 
     switch property {
@@ -120,6 +115,7 @@ func sortPlanetData(property: sortValue) {
             sf = { $0.surfaceTempRange < $1.surfaceTempRange }
     }
     planetData?.sort(by: sf)
+    return planetData
 }
 
 struct PlanetInfo_Previews: PreviewProvider {

@@ -12,7 +12,7 @@ struct PlanetList: View {
 
     var body: some View {
         NavigationView {
-            List(planetData!) { curPlanet in
+            List(sortPlanetData(property: sortSelection)!) { curPlanet in
                 NavigationLink(destination: PlanetView(curPlanet)) {
                     PlanetRow(planet: curPlanet)
                 }
@@ -39,13 +39,6 @@ struct PlanetList: View {
                 }
 
             }())
-        }
-    }
-
-    init() {
-        if planetData != nil {
-            print(planetData!)
-            sortPlanetData(property: .orbitDistance)
         }
     }
 }
