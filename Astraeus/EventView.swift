@@ -14,17 +14,29 @@ struct EventView: View {
         event = ev
     }
     var body: some View {
-        VStack {
-            Text("\(event.name)")
-            Text("\(event.date.description)")
-            Text("\(event.description)")
-            Text("\(event.type)")
+        ScrollView {
+            HStack {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(event.type)
+                        .bold()
+                        .font(.title)
+                    Text("\(event.name)")
+                    Text("Description")
+                        .bold()
+                        .font(.title)
+                    Text("\(event.date)")
+                    Text("\(event.description)")
+                }
+                Spacer()
+            }
+            
         }
+        .padding()
     }
 }
 
 struct EventView_Previews: PreviewProvider {
     static var previews: some View {
-        EventView(TestEvent())
+        EventView(RocketEvent())
     }
 }
