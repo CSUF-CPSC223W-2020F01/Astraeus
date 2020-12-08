@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct EventRow: View {
-    let event: Event
+    let event: RocketEvent
     
-    init(_ ev: Event) {
+    init(_ ev: RocketEvent) {
         event = ev
     }
     
@@ -24,7 +24,7 @@ struct EventRow: View {
 
 struct EventRow_Previews: PreviewProvider {
     static var previews: some View {
-        EventRow(TestEvent())
+        EventRow(RocketEvent(date: Date(), name: "Test", description: "Test"))
             .previewLayout(.fixed(width: 300, height: 70))
     }
 }
