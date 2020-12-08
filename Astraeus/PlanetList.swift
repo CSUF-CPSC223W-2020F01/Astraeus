@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PlanetList: View {
-    @State private var sortSelection = sortValue.orbitDistance
+    @State private var sortSelection = SortValue.orbitDistance
 
     var body: some View {
         NavigationView {
@@ -22,16 +22,16 @@ struct PlanetList: View {
                 Menu {
                     Button(action: { print("Hello there") }) {
                         Picker(selection: $sortSelection, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
-                            Text("Orbit Distance").tag(sortValue.orbitDistance)
-                            Text("Radius").tag(sortValue.radius)
-                            Text("Volume").tag(sortValue.volume)
-                            Text("Mass").tag(sortValue.mass)
-                            Text("Density").tag(sortValue.density)
-                            Text("Gravity").tag(sortValue.gravity)
-                            Text("Rotation Period").tag(sortValue.rotationPeriod)
-                            Text("Orbit Period").tag(sortValue.orbitPeriod)
-                            Text("Average Orbit Velocity").tag(sortValue.avgOrbitVelocity)
-                            Text("Orbit Inclination").tag(sortValue.orbitInclination)
+                            Text("Orbit Distance").tag(SortValue.orbitDistance)
+                            Text("Radius").tag(SortValue.radius)
+                            Text("Volume").tag(SortValue.volume)
+                            Text("Mass").tag(SortValue.mass)
+                            Text("Density").tag(SortValue.density)
+                            Text("Gravity").tag(SortValue.gravity)
+                            Text("Rotation Period").tag(SortValue.rotationPeriod)
+                            Text("Orbit Period").tag(SortValue.orbitPeriod)
+                            Text("Average Orbit Velocity").tag(SortValue.avgOrbitVelocity)
+                            Text("Orbit Inclination").tag(SortValue.orbitInclination)
                         }
                     }
                 } label: {
