@@ -84,7 +84,7 @@ func createPlanetData() -> [PlanetInfo]? {
 // Enumeration for each sorting value
 enum SortValue {
     case orbitDistance, radius, volume, mass, density, gravity, rotationPeriod, orbitPeriod, avgOrbitVelocity, orbitInclination, surfaceTempRange
-    func all() -> [SortValue] {
+    static func all() -> [SortValue] {
         return [.orbitDistance, .radius, .volume, .mass, .density, .gravity, .rotationPeriod, .orbitPeriod, .avgOrbitVelocity, .orbitInclination, .surfaceTempRange]
     }
 }
