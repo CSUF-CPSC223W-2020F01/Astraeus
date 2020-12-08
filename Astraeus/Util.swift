@@ -61,12 +61,7 @@ class Util {
     static func stringToDate(_ isoDate: String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
-<<<<<<< HEAD
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        return dateFormatter.date(from:isoDate)
-    }
-=======
-        dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.date(from:isoDate)
     }
     
@@ -108,5 +103,4 @@ class Util {
     static func intsLessOrEqualTo(_ l: String, _ r: String) -> Bool {
         return (l.count == r.count) ? l <= r : l.count <= r.count
     }
->>>>>>> ab7c3ca6d5b84ba1459acde7201e9f166b3b707e
 }
