@@ -76,7 +76,7 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-private func createPlanetData() -> [PlanetInfo]? {
+func createPlanetData() -> [PlanetInfo]? {
     guard let arr: [PlanetInfo] = load("Planets.json") else { return nil }
     return arr
 }
