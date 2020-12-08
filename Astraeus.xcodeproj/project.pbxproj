@@ -12,6 +12,7 @@
 		7E2D664525252528001672B2 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D664425252528001672B2 /* EventList.swift */; };
 		7E2D664A2526B3AF001672B2 /* PlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D66492526B3AE001672B2 /* PlanetView.swift */; };
 		7E581B1425760BDE0084435B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E581B1325760BDE0084435B /* Event.swift */; };
+		7E581B24257E042F0084435B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E581B23257E042F0084435B /* Util.swift */; };
 		7ECCF302251D5B8F00462676 /* AstraeusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF301251D5B8F00462676 /* AstraeusApp.swift */; };
 		7ECCF304251D5B8F00462676 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCF303251D5B8F00462676 /* ContentView.swift */; };
 		7ECCF306251D5B9300462676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECCF305251D5B9300462676 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		7E2D664425252528001672B2 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		7E2D66492526B3AE001672B2 /* PlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetView.swift; sourceTree = "<group>"; };
 		7E581B1325760BDE0084435B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7E581B23257E042F0084435B /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		7ECCF2FE251D5B8F00462676 /* Astraeus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astraeus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECCF301251D5B8F00462676 /* AstraeusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraeusApp.swift; sourceTree = "<group>"; };
 		7ECCF303251D5B8F00462676 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				7E2D66492526B3AE001672B2 /* PlanetView.swift */,
 				7E2D663F252524EA001672B2 /* SpaceMap.swift */,
 				7ECCF305251D5B9300462676 /* Assets.xcassets */,
+				7E581B23257E042F0084435B /* Util.swift */,
 				7ECCF307251D5B9300462676 /* Preview Content */,
 			);
 			path = Astraeus;
@@ -297,6 +300,7 @@
 				7E2D6638252524DB001672B2 /* PlanetList.swift in Sources */,
 				FAD848A92527BB21005B666D /* PlanetInfo.swift in Sources */,
 				7E2D6640252524EA001672B2 /* SpaceMap.swift in Sources */,
+				7E581B24257E042F0084435B /* Util.swift in Sources */,
 				FA3156132558835E00281EB6 /* PlanetRow.swift in Sources */,
 				7E2D664525252528001672B2 /* EventList.swift in Sources */,
 				FA8B5DBB2576F7CB007B0C09 /* EventView.swift in Sources */,
