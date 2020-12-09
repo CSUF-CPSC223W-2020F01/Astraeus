@@ -18,7 +18,7 @@ class RocketEvent: Event {
     var date: Date
     var name : String
     var description : String
-    var type = "Defualt"
+    var type = "Event"
     
     init(date: Date, name: String, description: String) {
         self.date = date
