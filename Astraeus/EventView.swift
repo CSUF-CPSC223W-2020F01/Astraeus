@@ -9,10 +9,11 @@ import SwiftUI
 
 struct EventView: View {
     let event: RocketEvent
-    
+
     init(_ ev: RocketEvent) {
         event = ev
     }
+
     var body: some View {
         ScrollView {
             HStack {
@@ -39,6 +40,6 @@ struct EventView: View {
 struct EventView_Previews: PreviewProvider {
     static var previews: some View {
         EventView(RocketEvent(date: Date(), name: "Test", description: "Test", imageURL: nil))
-                    .previewLayout(.fixed(width: 300, height: 70))
+            .previewLayout(.fixed(width: 300, height: 70))
     }
 }

@@ -8,26 +8,27 @@
 import Foundation
 
 protocol Event: Decodable, Identifiable {
-    var date : Date {get}
-    var name : String {get}
-    var description : String {get}
-    var type : String {get}
-    var imageURL : String? {get}
+    var date: Date { get }
+    var name: String { get }
+    var description: String { get }
+    var type: String { get }
+    var imageURL: String? { get }
 }
 
 class RocketEvent: Event {
     var date: Date
-    var name : String
-    var imageURL : String?
-    var description : String
+    var name: String
+    var imageURL: String?
+    var description: String
     var type = "Rocket Mission"
-    
+
     init(date: Date, name: String, description: String, imageURL: String?) {
         self.date = date
         self.name = name
         self.description = description
         self.imageURL = imageURL
     }
+
     init() {
         date = Date()
         name = "Falcon 9 • SpaceX CRS 21"

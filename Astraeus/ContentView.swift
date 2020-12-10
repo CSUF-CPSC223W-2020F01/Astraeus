@@ -15,19 +15,19 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "list.bullet")
                     Text("Planet List")
-            }.tag(1)
-            
+                }.tag(1)
+
             SpaceMap()
                 .tabItem {
                     Image(systemName: "map")
                     Text("Map")
                 }.tag(2)
-            
+
             EventList()
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Events")
-           }.tag(3)
+                }.tag(3)
         }
     }
 }

@@ -9,11 +9,11 @@ import SwiftUI
 
 struct PlanetRow: View {
     let planet: PlanetInfo
-    
+
     init(planet: PlanetInfo) {
         self.planet = planet
     }
-    
+
     var body: some View {
         HStack {
             Image(planet.name)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let MAX_REQUESTS = 5;
+let MAX_REQUESTS = 5
 
 func getEvents(_ url: String, _ arr: [RocketEvent], _ numRequests: Int, callback: @escaping ([RocketEvent]) -> Void) {
     Util.call_api(url) { res in
@@ -50,7 +50,7 @@ struct EventList: View {
         getEvents("https://spacelaunchnow.me/api/3.3.0/event/", eventList, 0) {
             eventList = $0
             eventList.sort(by: { $0.date < $1.date })
-            
+
             isLoading = false
             print("Finished loading.")
         }
@@ -61,8 +61,7 @@ struct EventList: View {
             List {
                 if eventList.isEmpty {
                     Text(isLoading ? "Loading..." : "No events found.").italic()
-                }
-                else {
+                } else {
                     ForEach(eventList) { event in
                         Section(header: Text("\(dateFormatter.string(from: event.date))")) {
                             NavigationLink(destination: EventView(event)) {
@@ -72,7 +71,7 @@ struct EventList: View {
                     }
                 }
             }
-            
+
             .navigationBarTitle(Text("Events"))
             .navigationBarItems(trailing: {
                 Button("Refresh") {

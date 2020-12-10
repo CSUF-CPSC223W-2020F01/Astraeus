@@ -29,18 +29,18 @@ extension UIImageView {
     }
 }
 
-class Util {
+enum Util {
     static func call_api(_ url_name: String, callback: @escaping ([String: Any]?) -> Void) {
         guard let url = URL(string: url_name) else {
             print("\nError: cannot create url\n")
-            callback(nil);
-            return;
+            callback(nil)
+            return
         }
         
         let urlRequest = URLRequest(url: url)
         
         let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: {
-            body, res, err in
+            body, _, err in
             
             guard err == nil else {
                 print("\nHTTP ERROR\n")
@@ -63,7 +63,8 @@ class Util {
                 }
             
                 callback(result)
-            } catch {
+            }
+            catch {
                 print("\nError: could not get data\n")
                 callback(nil)
             }
@@ -77,16 +78,15 @@ class Util {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        return dateFormatter.date(from:isoDate)
+        return dateFormatter.date(from: isoDate)
     }
     
     // https://stackoverflow.com/questions/16612086/compare-very-large-numbers-stored-in-string
     // RETURN VALUES:
     // 1: x > y
     // 0: x = y
-    //-1: x < y
-    static func compareInts(_ l: String, _ r: String) -> Int
-    {
+    // -1: x < y
+    static func compareInts(_ l: String, _ r: String) -> Int {
         var x = l
         var y = r
         while let range = x.range(of: ",") {
@@ -103,13 +103,12 @@ class Util {
             x = x.padding(toLength: y.count, withPad: "0", startingAt: 0)
         }
 
-        for i in 0..<x.count
-        {
+        for i in 0 ..< x.count {
             if x[i] < y[i] {
-                return -1;
+                return -1
             }
             if x[i] > y[i] {
-                return 1;
+                return 1
             }
         }
         return 0

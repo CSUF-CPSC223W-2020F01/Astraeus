@@ -37,8 +37,8 @@ class AstraeusTests: XCTestCase {
         let cases = SortValue.all()
         
         for curSort in cases {
-            sortPlanetData(property: curSort)
-            for i in 0..<planetData!.count - 1 {
+            _ = sortPlanetData(property: curSort)
+            for i in 0 ..< planetData!.count - 1 {
                 switch curSort {
                     case .orbitDistance:
                         XCTAssertLessThanOrEqual(planetData![i].orbitDistance, planetData![i + 1].orbitDistance)
@@ -122,7 +122,6 @@ class AstraeusTests: XCTestCase {
         }
         let result = XCTWaiter.wait(for: [expectation], timeout: 2.0)
         XCTAssertNotEqual(result, .timedOut)
-        
     }
     
     func testAPICallInvalidUrl() throws {

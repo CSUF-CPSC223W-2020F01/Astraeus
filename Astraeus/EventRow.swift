@@ -9,11 +9,11 @@ import SwiftUI
 
 struct EventRow: View {
     let event: RocketEvent
-    
+
     init(_ ev: RocketEvent) {
         event = ev
     }
-    
+
     var body: some View {
         HStack {
             Text("\(event.name)")
