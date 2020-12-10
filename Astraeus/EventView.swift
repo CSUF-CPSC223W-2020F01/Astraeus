@@ -9,9 +9,12 @@ import SwiftUI
 
 struct EventView: View {
     let event: Event
+    let dateFormatter: DateFormatter
     
     init(_ ev: Event) {
         event = ev
+        dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
     }
     var body: some View {
         ScrollView {
@@ -24,14 +27,14 @@ struct EventView: View {
                     Text("Description")
                         .bold()
                         .font(.title)
-                    Text("\(event.date)")
+                    Text("\(dateFormatter.string(from: event.date))")
                     Text("\(event.description)")
                 }
                 Spacer()
             }
             
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 

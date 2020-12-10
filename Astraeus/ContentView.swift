@@ -14,7 +14,7 @@ struct ContentView: View {
             PlanetList()
                 .tabItem {
                     Image(systemName: "list.bullet")
-                    Text("Planet List")
+                    Text("Our Planets")
             }.tag(1)
             
             SpaceMap()

@@ -9,10 +9,12 @@ import SwiftUI
 
 struct EventList: View {
     let testEvent: TestEvent
+    let rocketEvent: RocketEvent
     let dateFormatter: DateFormatter
     
     init() {
         testEvent = TestEvent()
+        rocketEvent = RocketEvent()
         dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
     }
@@ -25,7 +27,11 @@ struct EventList: View {
                         EventRow(testEvent)
                     }
                 }
-                
+                Section(header: Text("\(dateFormatter.string(from: rocketEvent.date))")) {
+                    NavigationLink(destination: EventView(rocketEvent)) {
+                        EventRow(rocketEvent)
+                    }
+                }
             }
             .navigationBarTitle(Text("Events"))
         }

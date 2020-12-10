@@ -44,7 +44,7 @@ struct PlanetView: View {
              }
             .frame(alignment: .leading)
         }
-        .padding(.bottom).padding(.horizontal)
+        .padding(.horizontal)
     }
     
 }
