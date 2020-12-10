@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let MAX_REQUESTS = 5;
+
 func getEvents(_ url: String, _ arr: [RocketEvent], _ numRequests: Int, callback: @escaping ([RocketEvent]) -> Void) {
     Util.call_api(url) { res in
         var allEvents = arr
@@ -18,7 +20,7 @@ func getEvents(_ url: String, _ arr: [RocketEvent], _ numRequests: Int, callback
             let re = RocketEvent(date: Util.stringToDate(event["date"] as! String) ?? Date(), name: event["name"] as! String, description: event["description"] as! String, imageURL: event["feature_image"] as? String)
             allEvents.append(re)
         }
-        if body["next"] != nil, numRequests < 5 {
+        if body["next"] != nil, numRequests < MAX_REQUESTS {
             var url = body["next"] as! String
             url.insert("s", at: url.index(url.startIndex, offsetBy: 4))
             print(url)
@@ -70,17 +72,17 @@ struct EventList: View {
                     }
                 }
             }
-            .onAppear {
-                if eventList.isEmpty {
-                    refreshEvents()
-                }
-            }
+            
             .navigationBarTitle(Text("Events"))
             .navigationBarItems(trailing: {
                 Button("Refresh") {
                     refreshEvents()
                 }
             }())
+        }.onAppear {
+            if eventList.isEmpty {
+                refreshEvents()
+            }
         }
     }
 }

@@ -110,7 +110,38 @@ class AstraeusTests: XCTestCase {
         XCTAssertTrue(containsPlanet(arr, "Schleptune"))
     }
     
-    func testAPICall() throws {
-        // Pending
+    func testAPICallValidUrlAndResponse() throws {
+        let expectation = XCTestExpectation(description: "awaiting api response")
+        Util.call_api("https://jsonplaceholder.typicode.com/todos/1") {
+            XCTAssertNotNil($0)
+            XCTAssertEqual($0!["userId"] as! Int, 1)
+            XCTAssertEqual($0!["id"] as! Int, 1)
+            XCTAssertEqual($0!["title"] as! String, "delectus aut autem")
+            XCTAssertEqual($0!["completed"] as! Bool, false)
+            expectation.fulfill()
+        }
+        let result = XCTWaiter.wait(for: [expectation], timeout: 2.0)
+        XCTAssertNotEqual(result, .timedOut)
+        
+    }
+    
+    func testAPICallInvalidUrl() throws {
+        let expectation = XCTestExpectation(description: "awaiting api response")
+        Util.call_api("invalid url") {
+            XCTAssertNil($0)
+            expectation.fulfill()
+        }
+        let result = XCTWaiter.wait(for: [expectation], timeout: 2.0)
+        XCTAssertNotEqual(result, .timedOut)
+    }
+    
+    func testAPICallInvalidJSON() throws {
+        let expectation = XCTestExpectation(description: "awaiting api response")
+        Util.call_api("https://raw.githubusercontent.com/chrislgarry/Apollo-11/master/Comanche055/ANGLFIND.agc") {
+            XCTAssertNil($0)
+            expectation.fulfill()
+        }
+        let result = XCTWaiter.wait(for: [expectation], timeout: 2.0)
+        XCTAssertNotEqual(result, .timedOut)
     }
 }

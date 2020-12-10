@@ -72,7 +72,7 @@ class Util {
         task.resume()
     }
     
-    // param. MUST follow the format yyyy-MM-dd
+    // param. MUST follow the format correct format
     static func stringToDate(_ isoDate: String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX

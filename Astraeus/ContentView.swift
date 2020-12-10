@@ -28,7 +28,6 @@ struct ContentView: View {
                     Image(systemName: "calendar")
                     Text("Events")
            }.tag(3)
-            
         }
     }
 }
