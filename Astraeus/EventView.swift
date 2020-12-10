@@ -16,28 +16,29 @@ struct EventView: View {
     var body: some View {
         ScrollView {
             HStack {
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(event.type)
-                        .bold()
-                        .font(.title)
+                VStack(alignment: .leading) {
                     Text("\(event.name)")
-                    Text("Description")
                         .bold()
-                        .font(.title)
+                    Text("Time")
+                        .font(.title2)
+                        .bold()
                     Text("\(event.date)")
+                    Text("Description")
+                        .font(.title2)
+                        .bold()
                     Text("\(event.description)")
                 }
                 Spacer()
             }
-            
         }
-        .padding()
+        .navigationTitle(event.type)
+        .padding(.bottom).padding(.horizontal)
     }
 }
 
 struct EventView_Previews: PreviewProvider {
     static var previews: some View {
-        EventView(RocketEvent(date: Date(), name: "Test", description: "Test"))
+        EventView(RocketEvent(date: Date(), name: "Test", description: "Test", imageURL: nil))
                     .previewLayout(.fixed(width: 300, height: 70))
     }
 }

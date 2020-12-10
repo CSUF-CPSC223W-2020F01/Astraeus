@@ -24,7 +24,7 @@ struct EventRow: View {
 
 struct EventRow_Previews: PreviewProvider {
     static var previews: some View {
-        EventRow(RocketEvent(date: Date(), name: "Test", description: "Test"))
+        EventRow(RocketEvent(date: Date(), name: "Test", description: "Test", imageURL: nil))
             .previewLayout(.fixed(width: 300, height: 70))
     }
 }
